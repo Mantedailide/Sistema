@@ -133,9 +133,9 @@ class duomenys_class extends database_conn {
             $username=$_POST["slapyvardis"];
             $password=$_POST["slaptazodis"];
 
-           $logInSuccessfull = $this->loginto("vartotojai",$username,$password);
+           $loginsuccess = $this->loginto("vartotojai",$username,$password);
 
-           if($logInSuccessfull == 1) {
+           if($loginsuccess == 1) {
             header("location: pagrindinis.php");
            } else {
             header("location: prisijungimas.php");
